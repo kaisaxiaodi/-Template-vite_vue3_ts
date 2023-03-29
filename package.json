@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "axios": "^0.24.0",
-    "naive-ui": "^2.21.2",
     "nprogress": "^0.2.0",
     "pinia": "^2.0.0-rc.10",
     "vfonts": "^0.1.0",
