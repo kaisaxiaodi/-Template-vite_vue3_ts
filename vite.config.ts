@@ -3,6 +3,15 @@ import vue from '@vitejs/plugin-vue'
 import path from 'path'
 //@ts-ignore
 import viteCompression from 'vite-plugin-compression'
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
+// todo 选择ui框架
+// import {
+//   AntDesignVueResolver,
+//   ElementPlusResolver,
+//   VantResolver,
+// } from 'unplugin-vue-components/resolvers'
+
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -17,6 +26,20 @@ export default defineConfig({
       algorithm: 'gzip',
       ext: '.gz',
     }),
+    // todo 选择ui框架自动导入
+    AutoImport({
+     //   resolvers: [
+    //     AntDesignVueResolver(),
+    //     ElementPlusResolver(),
+    //   ],
+    }),
+    // todo 选择ui框架
+    Components({
+    //   resolvers: [
+    //     AntDesignVueResolver(),
+    //     ElementPlusResolver(),
+    //   ],
+    })
   ],
   // 配置别名
   resolve: {

@@ -25,6 +25,8 @@ module.exports = {
   // eslint-plugin-vue @typescript-eslint/eslint-plugin eslint-plugin-prettier的缩写
   plugins: ['vue', '@typescript-eslint', 'prettier'],
   rules: {
+    // 强制代码中的换行符必须是LF
+    "linebreak-style": ["error", "unix"],
     '@typescript-eslint/ban-ts-ignore': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
